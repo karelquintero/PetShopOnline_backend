@@ -4,7 +4,7 @@
   "description": "proyecto backend para mi Pet shop online",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Grupo 10 Omega Pet Shop",
