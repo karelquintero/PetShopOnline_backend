@@ -5,7 +5,9 @@ ProductoOperaciones.crearProducto = async(req, res) => {
     try {
         const objeto = req.body;
         const producto = new ProductoModelo(objeto);
+        console.log(producto);
         const productoGuardado = await producto.save();
+       // console.log(productoGuardado);
         if (productoGuardado != null) {
             res.status(201).send(productoGuardado);
         }
@@ -67,6 +69,7 @@ ProductoOperaciones.modificarProducto = async(req, res) => {
             precio: body.precio,
             categorias: body.categorias,
             imagen : body.imagen,
+            caracteristicas : body.caracteristicas,
             disp : body.disp
         }
         console.log(producto);

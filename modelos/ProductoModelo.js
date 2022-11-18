@@ -4,8 +4,9 @@ const productoSchema = new mongoose.Schema({
     nombre: { type:String, maxLength:40, required:true },
     marca: { type:String, maxLength:40, required:true },
     precio: { type:Number, required:true },
-    categorias: [ { type:String, maxLength:40, required:true } ],
+    categorias:  { type:String, maxLength:40, required:true },
     imagen : { type:String, maxLength:40, required:true, unique: true },
+    caracteristicas: { type:String, maxLength:50, required:true },
     disp : { type:Boolean, required:true }
 });
 
